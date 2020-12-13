@@ -1,6 +1,6 @@
 {
   "name": "calculator-demo-i",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "a simple calculator to do basic operations",
   "module": "index.js",
   "main": "dist/index.js",
