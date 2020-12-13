@@ -1,3 +1,3 @@
 export const division = (x, y) => {
-  return `Division = ${x / y}`;
+  return `Division is = ${x / y}`;
 };
