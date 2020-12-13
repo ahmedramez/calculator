@@ -37,7 +37,7 @@
     "webpack-merge": "^5.7.0"
   },
   "files": [
-    "src"
+    "dist"
   ],
   "dependencies": {
     "@types/lodash-es": "^4.17.4",
