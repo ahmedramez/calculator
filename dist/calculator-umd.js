@@ -1,1 +1,62 @@
-!function(t,e){"object"==typeof exports&&"object"==typeof module?module.exports=e():"function"==typeof define&&define.amd?define("calculator",[],e):"object"==typeof exports?exports.calculator=e():t.calculator=e()}(this,(function(){return(()=>{"use strict";var t={387:(t,e,r)=>{r.r(e),r.d(e,{division:()=>D,multiply:()=>_,sum:()=>U});const n="object"==typeof r.g&&r.g&&r.g.Object===Object&&r.g;var o="object"==typeof self&&self&&self.Object===Object&&self;const u=(n||o||Function("return this")()).Symbol,f=Array.isArray;var c=Object.prototype,i=c.hasOwnProperty,a=c.toString,l=u?u.toStringTag:void 0;var d=Object.prototype.toString;var s=u?u.toStringTag:void 0;const p=function(t){return null==t?void 0===t?"[object Undefined]":"[object Null]":s&&s in Object(t)?function(t){var e=i.call(t,l),r=t[l];try{t[l]=void 0;var n=!0}catch(t){}var o=a.call(t);return n&&(e?t[l]=r:delete t[l]),o}(t):function(t){return d.call(t)}(t)};var y=u?u.prototype:void 0,b=y?y.toString:void 0;const v=function t(e){if("string"==typeof e)return e;if(f(e))return function(t,e){for(var r=-1,n=null==t?0:t.length,o=Array(n);++r<n;)o[r]=e(t[r],r,t);return o}(e,t)+"";if(function(t){return"symbol"==typeof t||function(t){return null!=t&&"object"==typeof t}(t)&&"[object Symbol]"==p(t)}(e))return b?b.call(e):"";var r=e+"";return"0"==r&&1/e==-1/0?"-0":r},g=function(t){return null==t?"":v(t)},j=function(t,e,r){var n=t.length;return r=void 0===r?n:r,!e&&r>=n?t:function(t,e,r){var n=-1,o=t.length;e<0&&(e=-e>o?0:o+e),(r=r>o?o:r)<0&&(r+=o),o=e>r?0:r-e>>>0,e>>>=0;for(var u=Array(o);++n<o;)u[n]=t[n+e];return u}(t,e,r)};var h=RegExp("[\\u200d\\ud800-\\udfff\\u0300-\\u036f\\ufe20-\\ufe2f\\u20d0-\\u20ff\\ufe0e\\ufe0f]");const m=function(t){return h.test(t)};var O="[\\u0300-\\u036f\\ufe20-\\ufe2f\\u20d0-\\u20ff]",S="\\ud83c[\\udffb-\\udfff]",x="[^\\ud800-\\udfff]",w="(?:\\ud83c[\\udde6-\\uddff]){2}",T="[\\ud800-\\udbff][\\udc00-\\udfff]",A="(?:"+O+"|"+S+")?",P="[\\ufe0e\\ufe0f]?",C=P+A+"(?:\\u200d(?:"+[x,w,T].join("|")+")"+P+A+")*",E="(?:"+[x+O+"?",O,w,T,"[\\ud800-\\udfff]"].join("|")+")",F=RegExp(S+"(?="+S+")|"+E+C,"g");const M=function(t){return m(t)?function(t){return t.match(F)||[]}(t):function(t){return t.split("")}(t)},R=function(t){t=g(t);var e=m(t)?M(t):void 0,r=e?e[0]:t.charAt(0),n=e?j(e,1).join(""):t.slice(1);return r.toUpperCase()+n},U=function(t,e){return"".concat((r="sum",R(g(r).toLowerCase()))," = ").concat(t+e);var r};var _=function(t,e){return"multiply = ".concat(t*e)},D=function(t,e){return"Division = ".concat(t/e)}}},e={};function r(n){if(e[n])return e[n].exports;var o=e[n]={exports:{}};return t[n](o,o.exports,r),o.exports}return r.d=(t,e)=>{for(var n in e)r.o(e,n)&&!r.o(t,n)&&Object.defineProperty(t,n,{enumerable:!0,get:e[n]})},r.g=function(){if("object"==typeof globalThis)return globalThis;try{return this||new Function("return this")()}catch(t){if("object"==typeof window)return window}}(),r.o=(t,e)=>Object.prototype.hasOwnProperty.call(t,e),r.r=t=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},r(387)})()}));
+!(function (e, t) {
+  "object" == typeof exports && "object" == typeof module
+    ? (module.exports = t(require("lodash-es")))
+    : "function" == typeof define && define.amd
+    ? define(["lodash-es"], t)
+    : "object" == typeof exports
+    ? (exports.calculator = t(require("lodash-es")))
+    : (e.calculator = t(e["lodash-es"]));
+})(self, function (e) {
+  return (() => {
+    "use strict";
+    var t = {
+        330: (e, t, o) => {
+          o.r(t),
+            o.d(t, {
+              division: () => i,
+              multiply: () => u,
+              subtract: () => c,
+              sum: () => n,
+            });
+          var r = o(970);
+          const n = function (e, t) {
+            return "".concat((0, r.capitalize)("sum"), " = ").concat(e + t);
+          };
+          var u = function (e, t) {
+              return "multiply = ".concat(e * t);
+            },
+            i = function (e, t) {
+              return "Division is = ".concat(e / t);
+            },
+            c = function (e, t) {
+              return e - t;
+            };
+        },
+        970: (t) => {
+          t.exports = e;
+        },
+      },
+      o = {};
+    function r(e) {
+      if (o[e]) return o[e].exports;
+      var n = (o[e] = { exports: {} });
+      return t[e](n, n.exports, r), n.exports;
+    }
+    return (
+      (r.d = (e, t) => {
+        for (var o in t)
+          r.o(t, o) &&
+            !r.o(e, o) &&
+            Object.defineProperty(e, o, { enumerable: !0, get: t[o] });
+      }),
+      (r.o = (e, t) => Object.prototype.hasOwnProperty.call(e, t)),
+      (r.r = (e) => {
+        "undefined" != typeof Symbol &&
+          Symbol.toStringTag &&
+          Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }),
+          Object.defineProperty(e, "__esModule", { value: !0 });
+      }),
+      r(330)
+    );
+  })();
+});
