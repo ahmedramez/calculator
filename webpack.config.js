@@ -2,7 +2,7 @@ const path = require("path");
 const { merge } = require("webpack-merge");
 const nodeConfigBase = {
   target: "node",
-  entry: "./index.ts",
+  entry: "./src//index.ts",
   output: {
     filename: "calculator.js",
     path: path.resolve(__dirname, "dist"),
