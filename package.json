@@ -3,7 +3,7 @@
   "version": "1.0.3",
   "description": "a simple calculator to do basic operations",
   "types": "dist/index.d.ts",
-  "module": "index.ts",
+  "module": "src/index.ts",
   "main": "dist/index.js",
   "scripts": {
     "prepublishOnly": "webpack --mode=production",
@@ -37,7 +37,7 @@
     "webpack-merge": "^5.7.0"
   },
   "files": [
-    "dist"
+    "src"
   ],
   "dependencies": {
     "@types/lodash-es": "^4.17.4",
