@@ -1,5 +1,5 @@
 {
-  "name": "calculator-demo-i",
+  "name": "calculator-pkg",
   "version": "1.0.0",
   "description": "a simple calculator to do basic operations",
   "module": "index.js",
