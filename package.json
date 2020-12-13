@@ -1,6 +1,6 @@
 {
   "name": "calculator-pkg",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "a simple calculator to do basic operations",
   "types": "dist/index.d.ts",
   "module": "src/index.ts",
