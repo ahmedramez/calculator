@@ -36,9 +36,6 @@
     "webpack-cli": "^4.2.0",
     "webpack-merge": "^5.7.0"
   },
-  "files": [
-    "dist"
-  ],
   "dependencies": {
     "@types/lodash-es": "^4.17.4",
     "lodash-es": "^4.17.15"
