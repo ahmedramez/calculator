@@ -37,5 +37,8 @@
   ],
   "dependencies": {
     "lodash-es": "^4.17.15"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
   }
 }
