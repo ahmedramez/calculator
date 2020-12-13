@@ -1,6 +1,6 @@
 {
   "name": "calculator-pkg",
-  "version": "1.0.3-0",
+  "version": "1.0.3",
   "description": "a simple calculator to do basic operations",
   "module": "index.js",
   "main": "dist/index.js",
