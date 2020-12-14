@@ -1,13 +1,12 @@
 {
   "compilerOptions": {
     "outDir": "./lib",
-    "rootDir": "./src",
+    "rootDir": "./",
     "noImplicitAny": true,
     "module": "es6",
     "target": "es6",
     "allowJs": true,
-    "declaration": true,
-    "declarationDir": "./lib/@typings"
+    "declaration": false
   },
   "exclude": ["node_modules", "webpack.*.js"]
 }

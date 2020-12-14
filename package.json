@@ -2,12 +2,12 @@
   "name": "calculator-pkg",
   "version": "2.0.0",
   "description": "a simple calculator to do basic operations",
-  "types": "dist/index.d.ts",
-  "module": "src/index.ts",
-  "main": "dist/index.js",
+  "types": "lib/@typings/index.d.ts",
+  "main": "dist/calculator.js",
+  "module": "lib/index.js",
   "scripts": {
     "prepublishOnly": "webpack --mode=production",
-    "build": "webpack",
+    "build": "tsc && webpack",
     "release": "np",
     "postversion": "TAG=$(echo $(git describe --tags $(git rev-list --tags --max-count=1))) && git tag -a $TAG $TAG -f -m \"$(git log `git describe --tags --abbrev=0 HEAD^`..HEAD --oneline)\" && git push && git push --tags"
   },
@@ -38,8 +38,7 @@
   },
   "files": [
     "dist",
-    "src",
-    "tsconfig.json"
+    "lib"
   ],
   "dependencies": {
     "@types/lodash-es": "^4.17.4",
